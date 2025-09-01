@@ -6,7 +6,7 @@ This repository contains an open-source simulation of a ransomware-like "virus" 
 
 To ensure the functionality of this simulation, please note the following requirements:
 
-- **Run as Administrator**: The script must be executed with administrative privileges.
+- **Run as Administrator**: The script must be executed without administrative privileges.
 - **PowerShell Execution Policy**: Your PowerShell execution policy should allow the execution of scripts. Ensure it is not restricted to only trusted scripts.
 - **Ransomware Protection**: Disable any ransomware protection features in the Windows Security app, as they may prevent the script from functioning.
 
