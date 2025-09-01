@@ -15,5 +15,6 @@ This malware won't work if:
   # Disclaimer #
   
   This project is just for educational purpose . Don't use it for pranks or ilegal things.
+  
   Beaware! Using it for ilegal purpose can be a cybercrime!
   
