@@ -12,3 +12,5 @@ This malware won't work if:
   
   • If you have Ransomware protection turned on in Windows Security app.
 
+  # Disclaimer #
+  
