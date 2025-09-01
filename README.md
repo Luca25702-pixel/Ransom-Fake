@@ -6,14 +6,14 @@ This repository contains an open-source "virus" that moves your libraries to %Us
 
 This malware won't work if: 
   
-  • You don't run the file as administrator.
+  * You don't run the file as administrator.
   
-  •Your PowerShell execution policy is set to allow only trusted scripts .
+  * Your PowerShell execution policy is set to allow only trusted scripts .
   
-  • If you have Ransomware protection turned on in Windows Security app.
+  * If you have Ransomware protection turned on in Windows Security app.
 
   # Disclaimer #
   
   This project is just for educational purpose . Don't use it for pranks or ilegal things.
-  * Beaware Using it for ilegal purpose can be a cybercrime!
+  Beaware! Using it for ilegal purpose can be a cybercrime!
   
