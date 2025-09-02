@@ -4,7 +4,7 @@ This repository contains an open-source simulation of a ransomware-like "virus" 
 
 ## How to Make It Work
 
-To ensure the functionality of this simulation, please note the following requirements:
+To ensure the functionality of this simulation, please consider the following requirements:
 
 - ** Do not Run as Administrator**: The script must be executed **without** administrative privileges.
 - **PowerShell Execution Policy**: Your PowerShell execution policy should allow the execution of scripts. Ensure it is not restricted to only trusted scripts.
