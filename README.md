@@ -1,20 +1,18 @@
 # Ransom-Fake
 
-This repository contains an open-source "virus" that moves your libraries to %UserProfile%\AppData\Roaming\Microsoft\Windows and replaces them with "encrypted" files.
+This repository contains an open-source simulation of a ransomware-like "virus" designed to move your libraries to `%UserProfile%\AppData\Roaming\Microsoft\Windows` and replace them with "encrypted" files. This project is intended for educational purposes only.
 
-# How to make it work
+## How to Make It Work
 
-This malware won't work if: 
-  
-  * You don't run the file as administrator.
-  
-  * Your PowerShell execution policy is set to allow only trusted scripts .
-  
-  * If you have Ransomware protection turned on in Windows Security app.
+To ensure the functionality of this simulation, please note the following requirements:
 
-  # Disclaimer #
-  
-  This project is just for educational purpose . Don't use it for pranks or ilegal things.
-  
-  Beaware! Using it for ilegal purpose can be a cybercrime!
-  
+- **Run as Administrator**: The script must be executed **without** administrative privileges.
+- **PowerShell Execution Policy**: Your PowerShell execution policy should allow the execution of scripts. Ensure it is not restricted to only trusted scripts.
+- **Ransomware Protection**: Disable any ransomware protection features in the Windows Security app, as they may prevent the script from functioning.
+
+## Disclaimer
+
+This project is strictly for educational purposes. **Do not use it for pranks or illegal activities.** Engaging in illegal activities can be classified as cybercrime and may have serious legal consequences.
+
+**Be Aware!** Using this simulation for malicious purposes is unethical and can lead to severe repercussions.
+
