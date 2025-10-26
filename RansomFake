@@ -1,0 +1,2 @@
+powershell start -verb run $home\Register.exe
+wlrmdr -s 10 -f 3  -t Almost done! -m Getting ready to run for the first time!                                 Please don't interact whit the cmd sessions -a 10 
